@@ -1,0 +1,17 @@
+name: myenv
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pennylane==0.32.0
+      - pennylane-qiskit    # version not in list, match to pennylane 0.32.0
+      - numpy==1.23.5
+      - tensorflow==2.13.1
+      - tf-keras==2.15.0    # compatible with TensorFlow 2.13.1
+      - matplotlib==3.10.0
+      - scikit-learn==1.6.1
+      - silence-tensorflow==1.2.3
+      - qiskit-ibm-runtime  # version not in list, choose compatible one
